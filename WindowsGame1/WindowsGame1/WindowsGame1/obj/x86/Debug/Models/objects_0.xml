@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics">
+  <Asset Type="Graphics:NodeContent">
+    <Name>Icosphere</Name>
+    <Identity>
+      <SourceFilename>D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1Content\Models\objects.fbx</SourceFilename>
+      <SourceTool>FbxImporter</SourceTool>
+    </Identity>
+    <Transform>100 0 0 0 0 -1.62920678E-05 -100 0 0 100 -1.62920678E-05 0 0 0 0 1</Transform>
+  </Asset>
+</XnaContent>

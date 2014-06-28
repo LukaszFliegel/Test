@@ -1,0 +1,8 @@
+D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Models\torus.xnb
+D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.csprojResolveAssemblyReference.cache
+D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Models\objects.xnb

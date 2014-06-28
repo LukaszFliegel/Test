@@ -2,56 +2,56 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>Models\MonkeyHead.fbx</Source>
-      <Name>Models\MonkeyHead</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\dev\Git\Test\Test\Test\Test\bin\x86\Debug\Content\Models\MonkeyHead.xnb</Output>
-      <Time>2014-06-26T23:45:37.0951507+02:00</Time>
-      <Dependency>
-        <Key>D:\dev\Git\Test\Test\Test\Test\obj\x86\Debug\Models\MonkeyHead_0.xml</Key>
-        <Value>2014-06-26T23:50:09.7938126+02:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Models\MonkeyHead.fbx</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\dev\Git\Test\Test\Test\Test\obj\x86\Debug\Models\MonkeyHead_0.xml</Output>
-      <Time>2014-06-26T23:45:37.0951507+02:00</Time>
-    </Item>
-    <Item>
       <Source>Models\torus.fbx</Source>
       <Name>Models\torus</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\dev\Git\Test\Test\Test\Test\bin\x86\Debug\Content\Models\torus.xnb</Output>
-      <Time>2014-06-28T13:08:14.1069318+02:00</Time>
+      <Output>D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Models\torus.xnb</Output>
+      <Time>2014-06-27T22:25:58.1504847+02:00</Time>
       <Dependency>
-        <Key>D:\dev\Git\Test\Test\Test\Test\obj\x86\Debug\Models\torus_0.xml</Key>
-        <Value>2014-06-28T13:08:34.9180683+02:00</Value>
+        <Key>D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Models\torus_0.xml</Key>
+        <Value>2014-06-27T22:26:07.7510361+02:00</Value>
       </Dependency>
     </Item>
     <Item>
       <Source>Models\torus.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>D:\dev\Git\Test\Test\Test\Test\obj\x86\Debug\Models\torus_0.xml</Output>
-      <Time>2014-06-28T13:08:14.1069318+02:00</Time>
+      <Output>D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Models\torus_0.xml</Output>
+      <Time>2014-06-27T22:25:58.1504847+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\objects.fbx</Source>
+      <Name>Models\objects</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Models\objects.xnb</Output>
+      <Time>2014-06-27T22:41:26.9336202+02:00</Time>
+      <Dependency>
+        <Key>D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Models\objects_0.xml</Key>
+        <Value>2014-06-27T22:43:30.6285024+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\objects.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Models\objects_0.xml</Output>
+      <Time>2014-06-27T22:41:26.9336202+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
-      <ContentProjectGUID>{D36F7C5D-7B94-46EB-9CA3-A993780ADAA2}</ContentProjectGUID>
+      <ContentProjectGUID>{DE5EBA41-4BB7-464D-8FF7-139F72FA2007}</ContentProjectGUID>
       <TargetPlatform>Windows</TargetPlatform>
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>D:\dev\Git\Test\Test\Test\TestContent\</RootDirectory>
-      <LoggerRootDirectory>D:\dev\Git\Test\Test\Test\Test\</LoggerRootDirectory>
-      <IntermediateDirectory>D:\dev\Git\Test\Test\Test\Test\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>D:\dev\Git\Test\Test\Test\Test\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1Content\</RootDirectory>
+      <LoggerRootDirectory>D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\dev\Git\Test\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

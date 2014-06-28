@@ -8,18 +8,28 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using Test.Interfaces;
+using Test.Classes;
 
 namespace Test
 {
     /// <summary>
     /// This is the main type for your game
     /// </summary>
-    public class Game : Microsoft.Xna.Framework.Game
+    public class AlphaGame : Microsoft.Xna.Framework.Game
     {
-        GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
+        private GraphicsDeviceManager graphics;
+        private SpriteBatch spriteBatch;
 
-        public Game()
+        private Matrix world = Matrix.CreateTranslation(new Vector3(0, 0, 0));
+        private Matrix view = Matrix.CreateLookAt(new Vector3(0, 0, 10), new Vector3(0, 0, 0), Vector3.UnitY);
+        private Matrix projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45), 800f / 480f, 0.1f, 100f);
+
+        private List<AlphaModel> renderableList;
+
+        private KeyboardState state = Keyboard.GetState();
+
+        public AlphaGame()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
@@ -34,6 +44,10 @@ namespace Test
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            renderableList = new List<AlphaModel>();
+
+            renderableList.Add(new MovableObject("MonkeyHead", 0, 0, 0));
+            renderableList.Add(new MovableObject("torus", 0, 0, 0, false));
 
             base.Initialize();
         }
@@ -47,7 +61,10 @@ namespace Test
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            foreach (AlphaModel model in renderableList)
+            {
+                model.LoadContent(Content);
+            }
         }
 
         /// <summary>
@@ -70,7 +87,13 @@ namespace Test
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            // TODO: Add your update logic here
+            KeyboardState state = Keyboard.GetState();
+
+            foreach (AlphaModel renderableObject in renderableList)
+            {
+                if (renderableObject is IAlphaUpdateable)
+                    (renderableObject as IAlphaUpdateable).Update(gameTime);
+            }
 
             base.Update(gameTime);
         }
@@ -83,7 +106,11 @@ namespace Test
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
+            foreach (AlphaModel renderableObject in renderableList)
+            {
+                if (renderableObject is IAlphaRenderable)
+                    (renderableObject as IAlphaRenderable).Draw(world, view, projection);
+            }
 
             base.Draw(gameTime);
         }

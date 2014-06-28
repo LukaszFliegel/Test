@@ -4,3 +4,5 @@ D:\dev\Git\Test\Test\Test\Test\obj\x86\Debug\Test.csprojResolveAssemblyReference
 D:\dev\Git\Test\Test\Test\Test\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 D:\dev\Git\Test\Test\Test\Test\obj\x86\Debug\Test.exe
 D:\dev\Git\Test\Test\Test\Test\obj\x86\Debug\Test.pdb
+D:\dev\Git\Test\Test\Test\Test\bin\x86\Debug\Content\Models\MonkeyHead.xnb
+D:\dev\Git\Test\Test\Test\Test\bin\x86\Debug\Content\Models\torus.xnb
